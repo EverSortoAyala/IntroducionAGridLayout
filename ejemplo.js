@@ -31,3 +31,11 @@ if (datos) {
 for (let i = 0; i < 5; i++) {
     datos.innerHTML += `<p>Este es el mensaje número ${i + 1}</p>`;
 }
+
+let lista = ["Papas", "Galletas", "Refresco", "Dulces"];
+let divLista = document.querySelector("#lista");
+divLista.innerHTML = lista.map((item) => `<p>${item}</p>`).join('');
+let mensaje = "¡Bienvenido a la página!";
+const imprimirMensaje = (mensaje) => {
+    console.log(mensaje);
+}
